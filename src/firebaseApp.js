@@ -1,13 +1,23 @@
 import firebase from 'firebase';
 
+const {
+  VUE_APP_API_KEY, 
+  VUE_APP_AUTH_DOMAIN, 
+  VUE_APP_DATABASE_URL, 
+  VUE_APP_PROJECT_ID, 
+  VUE_APP_STORAGE_BUCKET, 
+  VUE_APP_MESSAGING_SENDED_ID, 
+  VUE_APP_APP_ID
+} = process.env;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyAoAjrl9anynWcQddN3W8Rvl1YX6awprC8",
-  authDomain: "turnout-43457.firebaseapp.com",
-  databaseURL: "https://turnout-43457.firebaseio.com",
-  projectId: "turnout-43457",
-  storageBucket: "turnout-43457.appspot.com",
-  messagingSenderId: "304089927814",
-  appId: "1:304089927814:web:2ff23d91d476d517388107",
+  apiKey: VUE_APP_API_KEY,
+  authDomain: VUE_APP_AUTH_DOMAIN,
+  databaseURL: VUE_APP_DATABASE_URL,
+  projectId: VUE_APP_PROJECT_ID,
+  storageBucket: VUE_APP_STORAGE_BUCKET,
+  messagingSenderId: VUE_APP_MESSAGING_SENDED_ID,
+  appId: VUE_APP_APP_ID,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
