@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="app">
-      <h1>{{ title }}</h1>
+    <h1>{{ title }}</h1>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,12 +9,12 @@
 export default {
   data() {
     return {
-      title: process.env.VUE_APP_TITLE,
-    }
+      title: process.env.VUE_APP_TITLE
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">
-@import './assets/scss/style.scss';
+@import "./assets/scss/style.scss";
 </style>
