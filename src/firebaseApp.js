@@ -20,6 +20,5 @@ const firebaseConfig = {
   appId: VUE_APP_APP_ID,
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-
-export default firebaseApp;
+export const firebaseApp = firebase.initializeApp(firebaseConfig);
+export const eventsRef = firebaseApp.database().ref().child('events');

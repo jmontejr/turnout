@@ -1,0 +1,21 @@
+#event {
+    &.event {
+        margin: 10px;
+        padding: 0.5rem;
+        border : {
+            width: 1px;
+            style: solid;
+            color: #333;
+            radius: 4px;
+        }
+        p {
+            margin: 0;
+        }
+
+        .list-group {
+            .list-item {
+                list-style-type: none;
+            }
+        }
+    }
+}

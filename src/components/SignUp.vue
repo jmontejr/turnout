@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import firebaseApp from "@/firebaseApp.js";
+import { firebaseApp } from "@/firebaseApp.js";
 
 export default {
   data() {

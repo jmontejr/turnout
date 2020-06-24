@@ -8,6 +8,10 @@ const mutations = {
   [MutationTypes.SIGN_OUT](state) {
     state.user = {};
   },
+
+  [MutationTypes.SET_EVENTS](state, payload) {
+    state.events = payload;
+  },
 };
 
 export default mutations;

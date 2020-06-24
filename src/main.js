@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import firebaseApp from "./firebaseApp";
+import { firebaseApp } from "./firebaseApp";
 import store from './store';
 
 firebaseApp.auth().onAuthStateChanged((user) => {
